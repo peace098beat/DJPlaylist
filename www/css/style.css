@@ -1,0 +1,124 @@
+/*Webフォント*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+*{
+    /*font-family: 'Noto Sans Japanese', sans-serif;*/
+    font-weight: 200;
+    /*font-weight: 100;*/
+    /*font-weight: 300;*/
+    /*font-weight: 400;*/
+    /*font-weight: 500;*/
+    /*font-weight: 600;*/
+    /*font-weight: 700;*/
+    /*font-weight: 800;*/
+    /*font-weight: 900;*/
+ }
+html {
+    background-color: #222;
+}
+
+body {
+    /*background-image: url("img/player_1.png");*/
+    background-color: #ddd;
+    /*margin-bottom: 200px;*/
+    /*padding-bottom: 200px;*/
+}
+
+
+/****** フォーム ******/
+#submit_button {
+    font-size:0.5em;
+    border-style: none;
+}
+
+.tweet-form{
+    /*padding: 1px 2px;*/
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 7px;
+
+    float:left;
+    
+    border: solid 2px #C78E3A;
+    border-radius: 3px;
+    
+    background-color: #f6f6f6;
+    
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+/****** カウンター ******/
+
+
+.counter{
+    font-size:3em;
+    color:#31708F;
+}
+.counter-sub{
+    font-size:0.2em;
+    color:#31708F;
+}
+
+/****** contetsエリア ******/
+
+.idea-area{
+    min-height: 200px;
+}
+
+/****** footer ******/
+
+.footer {
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #222;
+}
+.footer *{
+    color:#888;
+}
+
+/****** header ******/
+.header {
+    background-color: #222;
+    color: #e4e4e4;
+    height: 2.5em;
+    size: 1em;
+    padding-left:1em;
+    padding-top: 0.5em;
+}
+
+
+
+/* 余白関連 */
+
+.spacer20{
+    height: 20px;
+}
+.margin-btm40 {
+    margin-bottom: 40px;
+}
+
+.margin-btm20 {
+    margin-bottom: 20px;
+}
+
+
+/** iframe responsive **/
+
+.iframeWrap{
+    position:relative;
+    width:30%;
+    height:0;
+    padding-top:75%;
+}
+
+.iframeWrap iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
