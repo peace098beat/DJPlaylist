@@ -125,6 +125,10 @@ require_once("post_task.php");
     <div class="container idea-area">
         
         <?php
+        // 降順に変換
+        $youtube_url_list = array_reverse($youtube_url_list);
+
+
         for ( $i=0; $i<count($youtube_url_list); $i++) {
             $youtube_url =$youtube_url_list[$i];
             printf($HTML_TEMPLATE, $youtube_url["id"], $youtube_url["message"]);
