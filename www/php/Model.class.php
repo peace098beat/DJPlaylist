@@ -116,10 +116,11 @@ class Model
 
 	/**
 	 * データを取得
+	 * 昇順・降順 ASC、DESC
 	 */
 	public function get_data($maxCount=20){
 		// 挿入（プリペアドステートメント）
-	    $stmt = $this->pdo->prepare("SELECT * FROM ".TBL_NAME." WHERE hidden=0 ORDER BY id ASC ");
+	    $stmt = $this->pdo->prepare("SELECT * FROM ".TBL_NAME." WHERE hidden=0 ORDER BY id DESC ");
 	    $ret = $stmt->execute();
 		if (!$ret) {
 		    dbprint("<!--error Model::get_data-->");

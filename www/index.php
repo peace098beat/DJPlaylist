@@ -126,10 +126,15 @@ require_once("post_task.php");
         
         <?php
         // 降順に変換
-        $youtube_url_list = array_reverse($youtube_url_list);
+        // $youtube_url_list = array_reverse($youtube_url_list);
 
+        // リストの表示件数
+        $list_max = 10;
+        if( count($youtube_url_list) < $list_max) {
+            $list_max = count($youtube_url_list);
+        }
 
-        for ( $i=0; $i<count($youtube_url_list); $i++) {
+        for ( $i=0; $i<$list_max; $i++) {
             $youtube_url =$youtube_url_list[$i];
             printf($HTML_TEMPLATE, $youtube_url["id"], $youtube_url["message"]);
         }
